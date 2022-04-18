@@ -1,0 +1,11 @@
+---
+- name: install
+  hosts: all
+  become: yes
+  tasks:
+    - name: install
+      yum:
+        name: git
+        state: installed
+        name: tree
+        state: installed

@@ -1,0 +1,9 @@
+---
+- name: copy file
+  hosts: all
+  become: true
+  tasks:
+    - name: copy file
+      copy: 
+       src: /home/ranu/file3
+       dest: .
